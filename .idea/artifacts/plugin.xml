@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact name="plugin">
+    <output-path>$PROJECT_DIR$/out/artifacts/plugin</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true">
+        <file>file://$PROJECT_DIR$/build.xml</file>
+        <target>patch.plugin.descriptor.idea.artifact</target>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="server">
+        <element id="archive" name="samplePlugin.jar">
+          <element id="module-output" name="server" />
+        </element>
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/teamcity-plugin.xml" />
+    </root>
+  </artifact>
+</component>

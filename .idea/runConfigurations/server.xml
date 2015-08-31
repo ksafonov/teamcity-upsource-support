@@ -1,0 +1,90 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="TeamCity Tomcat" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+    <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+    <deployment>
+      <file path="%IDEA_RUN:TOMCAT_HOME%/webapps/ROOT">
+        <settings>
+          <option name="CONTEXT_PATH" value="/" />
+        </settings>
+      </file>
+    </deployment>
+    <server-settings>
+      <option name="BASE_DIRECTORY_NAME" value="tomcat_Unnamed_TeamCitySamplePlugind30123a4" />
+    </server-settings>
+    <log_file path="%IDEA_RUN:TOMCAT_HOME%/logs/localhost*" checked="true" skipped="true" show_all="false" alias="Tomcat Log" />
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <RunnerSettings RunnerId="Cover" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="3028" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Profile ">
+      <option name="myExternalizedOptions" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/teamcity-server.sh" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="run" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/teamcity-server.sh" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="stop" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/teamcity-server.bat" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="run" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/teamcity-server.bat" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="stop" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile ">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="$TeamCityDistribution$/bin/teamcity-server.sh" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="run" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="$TeamCityDistribution$/bin/teamcity-server.sh" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="stop" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/teamcity-server.bat" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="run" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="false" />
+        <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/teamcity-server.bat" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="stop" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <method>
+      <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="deploy" />
+    </method>
+  </configuration>
+</component>

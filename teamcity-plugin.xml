@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="urn:shemas-jetbrains-com:teamcity-plugin-v1-xml">
+  <info>
+    <name>UpsourceSupport</name>
+    <display-name>Upsource Support</display-name>
+    <version>@version@</version>
+    <description>Shows Upsource review information for the commit.</description>
+
+    <vendor>
+      <name>RuTarget</name>
+      <url>http://rutarget.ru</url>
+    </vendor>
+  </info>
+</teamcity-plugin>
